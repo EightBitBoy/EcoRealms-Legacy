@@ -6,5 +6,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('EcoRealsm backend is listening on port 3000!');
+  console.log('EcoRealms backend is listening on port 3000!');
 });
