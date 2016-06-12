@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/EightBitBoy/EcoRealms/issues"
   },
-  "homepage": "https://github.com/EightBitBoy/EcoRealms#readme"
+  "homepage": "https://github.com/EightBitBoy/EcoRealms",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
