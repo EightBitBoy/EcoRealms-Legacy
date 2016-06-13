@@ -4,6 +4,7 @@ var path = require('path');
 var app = express();
 
 // setup
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
