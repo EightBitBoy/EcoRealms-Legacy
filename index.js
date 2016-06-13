@@ -10,7 +10,7 @@ app.set('view engine', 'jade');
 
 // initialization
 app.listen(3000, function () {
-  console.log('EcoRealms backend is listening on port 3000!');
+  console.log('The EcoRealms backend is listening on port 3000!');
 });
 
 // routes

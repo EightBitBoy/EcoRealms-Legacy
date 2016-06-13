@@ -24,6 +24,7 @@
     "express": "^4.13.4"
   },
   "devDependencies": {
+    "bower": "^1.7.9",
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
     "nodemon": "^1.9.2"
