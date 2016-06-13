@@ -1,4 +1,5 @@
 # EcoRealms
+[![Build Status](https://travis-ci.org/EightBitBoy/EcoRealms.svg?branch=master)](https://travis-ci.org/EightBitBoy/EcoRealms)
 It's a game!
 
 ## What?
