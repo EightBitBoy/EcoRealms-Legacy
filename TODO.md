@@ -2,6 +2,7 @@
 A collection of things to do and stuff to take a look at.
 
 ## Roadmap
+- use TypeScript, create a workflow
 - Bower
 
 ## Interesting Libraries
@@ -20,3 +21,7 @@ A collection of things to do and stuff to take a look at.
 - npm triangle grid
 
 ## Research
+- VS Code Tasks fro LESS, SASS and TypeScript
+- Docker, see VS Code documentation
+- http://emmet.io/
+- JS modularization
