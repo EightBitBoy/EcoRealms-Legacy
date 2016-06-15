@@ -5,8 +5,15 @@ A collection of things to do and stuff to take a look at.
 - Bower
 
 ## Interesting Libraries
+- https://github.com/gorhill/Javascript-Voronoi
+- http://paperjs.org/
 - http://js.cytoscape.org/
 - https://www.npmjs.com/package/trimesh
 
 ## Interesting Links
+- http://www.raymondhill.net/voronoi/rhill-voronoi.html
 - http://blog.ivank.net/voronoi-diagram-in-javascript.html
+
+## Search Terms
+- voronoi hex grid
+- javascript voronoi
