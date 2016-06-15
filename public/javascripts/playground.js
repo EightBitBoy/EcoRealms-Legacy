@@ -1,7 +1,7 @@
 console.log("Hello from playground.js!")
 
-var WIDTH = 800
-var HEIGHT = 600
+var WIDTH = 600
+var HEIGHT = 450
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, WIDTH / HEIGHT, 0.1, 1000 );
@@ -16,3 +16,9 @@ var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
 camera.position.z = 5;
+
+function render() {
+	requestAnimationFrame( render );
+	renderer.render( scene, camera );
+}
+render();
