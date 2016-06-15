@@ -1,1 +1,1 @@
-console.log("I am a game!")
+console.log("Hello from game.js!")
