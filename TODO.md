@@ -2,7 +2,8 @@
 A collection of things to do and stuff to take a look at.
 
 ## Roadmap
-- use TypeScript, create a workflow
+- TypeScript, create a workflow
+- Docker
 - Bower
 
 ## Interesting Libraries
