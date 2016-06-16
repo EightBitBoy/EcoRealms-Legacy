@@ -30,6 +30,8 @@ var line = new THREE.Line(lineGeometry, lineMaterial);
 scene.add(line)
 
 var grid = new EBB.Grid();
+grid.addLine();
+grid.foobar();
 
 function render() {
 	cube.rotation.x += 0.01;
