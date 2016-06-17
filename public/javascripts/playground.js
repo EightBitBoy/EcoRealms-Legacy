@@ -31,7 +31,7 @@ scene.add(line)
 
 var grid = new EBB.Grid();
 grid.addLine(-2, 1, 2, 1);
-grid.addToScene(scene);
+//grid.addToScene(scene);
 
 function render() {
 	cube.rotation.x += 0.01;
