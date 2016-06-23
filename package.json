@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/EightBitBoy/EcoRealms",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "javascript-voronoi": "git://github.com/gorhill/Javascript-Voronoi.git#3fe2165aed14d3424398e04bccb120f68114eab5"
   },
   "devDependencies": {
     "bower": "^1.7.9",
     "chai": "^3.5.0",
-    "mocha": "^2.5.3",
-    "nodemon": "^1.9.2"
+    "mocha": "^2.5.3"
   }
 }
