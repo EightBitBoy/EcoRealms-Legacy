@@ -5,6 +5,7 @@ A collection of things to do and stuff to take a look at.
 - TypeScript, create a workflow
 - Docker
 - Bower
+- proper way of serving bower components
 
 ## Interesting Libraries
 - https://github.com/gorhill/Javascript-Voronoi
