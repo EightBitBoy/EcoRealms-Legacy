@@ -1,0 +1,20 @@
+{
+  "name": "eco-realms",
+  "description": "EcoRealms is a simulation game.",
+  "main": "index.js",
+  "authors": [
+    "Stefan Härtel"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "game"
+  ],
+  "homepage": "https://github.com/EightBitBoy/EcoRealms",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
