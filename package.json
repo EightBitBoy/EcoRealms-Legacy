@@ -22,6 +22,7 @@
   "homepage": "https://github.com/EightBitBoy/EcoRealms",
   "dependencies": {
     "express": "^4.13.4",
+    "serve-favicon": "2.3.0",
     "javascript-voronoi": "gorhill/javascript-voronoi#3fe2165aed14d3424398e04bccb120f68114eab5"
   },
   "devDependencies": {
