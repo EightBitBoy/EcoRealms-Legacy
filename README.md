@@ -34,3 +34,6 @@ $ bower install
 $ npm start
 ```
 The application is being served at localhost:3000!
+
+## Dependencies
+- [Javascript-Voronoi](https://github.com/gorhill/Javascript-Voronoi) by [Raymond Hill](https://github.com/gorhill)
