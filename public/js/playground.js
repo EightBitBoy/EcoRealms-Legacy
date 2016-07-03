@@ -24,7 +24,7 @@ scene.add(light);
 var lineMaterial = new THREE.LineBasicMaterial({color: 0xffff00, linewidth: 10});
 var lineGeometry = new THREE.Geometry();
 lineGeometry.vertices.push(new THREE.Vector3(-2, 0, 0));
-lineGeometry.vertices.push(new THREE.Vector3(0, 0, 0));
+lineGeometry.vertices.push(new THREE.Vector3(0, 0.2, 0));
 lineGeometry.vertices.push(new THREE.Vector3(2, 0, 0));
 var line = new THREE.Line(lineGeometry, lineMaterial);
 scene.add(line)
@@ -53,8 +53,21 @@ var data = [
 ];
 
 // stuff does not work for triangles???
-console.log(voro.polygons(data));
+var polygons = voro.polygons(data);
+console.log(polygons)
 
+
+polygons.forEach(function(polygon){
+	var voroLineGeometry = new THREE.Geometry();
+	var voroLineMaterial = new THREE.LineBasicMaterial({color: 0xff0000, linewidth: 10});
+
+	for(var i = 0; i < polygon.length - 1; i++){
+		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i][0], polygon[i][1], 0));
+		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i + 1][0], polygon[i + 1][0], 0));
+	}
+	var voroLine = new THREE.Line(lineGeometry, lineMaterial);
+	scene.add(voroLine);
+});
 
 function render() {
 	cube.rotation.x += 0.01;
