@@ -41,6 +41,11 @@ voronoi test stuff
 
 
 
+var voro = d3.voronoi()
+	.extent([[-2, -2], [2, 2]]);
+
+
+console.log(voro);
 
 
 
