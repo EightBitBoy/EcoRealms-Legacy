@@ -62,6 +62,7 @@ polygons.forEach(function(polygon){
 	var voroLineMaterial = new THREE.LineBasicMaterial({color: 0xff0000, linewidth: 10});
 
 	for(var i = 0; i < polygon.length - 1; i++){
+		console.log(polygon[i][0])
 		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i][0], polygon[i][1], 0));
 		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i + 1][0], polygon[i + 1][0], 0));
 	}
