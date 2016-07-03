@@ -35,18 +35,31 @@ grid.addLine(-2, 1, 2, 1);
 grid.addToScene(scene);
 */
 
+
 /*
 voronoi test stuff
 */
 
-
-
 var voro = d3.voronoi()
+	.x(function(d) { return d[0]; })
+	.y(function(d) { return d[1]; })
 	.extent([[-2, -2], [2, 2]]);
 
+var data = [
+	{x: -1, y: -1},
+	{x: -1, y: 1},
+	{x: 1, y: 1},
+	{x: 1, y: -1}
+];
 
-console.log(voro);
+var data2 = [
+	[-1, -1],
+	[-1, 1],
+	[1, 1],
+	[1, -1]
+];
 
+console.log(voro.triangles(data2));
 
 
 function render() {
