@@ -41,8 +41,8 @@ voronoi test stuff
 */
 
 var voro = d3.voronoi()
-	.x(function(d) { return d[0]; })
-	.y(function(d) { return d[1]; })
+	.x(function(d) { return d.x; })
+	.y(function(d) { return d.y; })
 	.extent([[-2, -2], [2, 2]]);
 
 var data = [
@@ -52,14 +52,8 @@ var data = [
 	{x: 1, y: -1}
 ];
 
-var data2 = [
-	[-1, -1],
-	[-1, 1],
-	[1, 1],
-	[1, -1]
-];
-
-console.log(voro.triangles(data2));
+// stuff does not work for triangles???
+console.log(voro.polygons(data));
 
 
 function render() {
