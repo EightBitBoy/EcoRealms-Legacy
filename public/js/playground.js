@@ -53,7 +53,10 @@ var data = [
 ];
 
 data.forEach(function(point){
-
+	var pointMaterial = new THREE.PointsMaterial({color: 0xff00ff, size: 0.3});
+	var pointGeometry = new THREE.Geometry();
+	pointGeometry.vertices.push(new THREE.Vector3(point.x, point.y, 0));
+	scene.add(new THREE.Points(pointGeometry, pointMaterial));
 });
 
 // stuff does not work for triangles???
