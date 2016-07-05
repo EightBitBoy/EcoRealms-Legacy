@@ -80,19 +80,17 @@ polygons.forEach(function(polygon){
 	for(var i = 0; i < polygon.length - 1; i++){
 		voroLineGeometry = new THREE.Geometry();
 		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i][0], polygon[i][1], 0));
-		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i + 1][0], polygon[i + 1][0], 0));
+		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i + 1][0], polygon[i + 1][1], 0));
 		voroLine = new THREE.Line(voroLineGeometry, voroLineMaterial);
 		scene.add(voroLine);
 	}
 
 	//draw line from last to first point
-	/*
 	voroLineGeometry = new THREE.Geometry();
 	voroLineGeometry.vertices.push(new THREE.Vector3(polygon[polygon.length -1][0], polygon[polygon.length - 1][1], 0));
-	voroLineGeometry.vertices.push(new THREE.Vector3(polygon[0][0], polygon[0][0], 0));
+	voroLineGeometry.vertices.push(new THREE.Vector3(polygon[0][0], polygon[0][1], 0));
 	voroLine = new THREE.Line(voroLineGeometry, voroLineMaterial);
 	scene.add(voroLine);
-	*/
 });
 
 function render() {
