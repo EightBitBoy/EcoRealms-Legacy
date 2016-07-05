@@ -52,6 +52,10 @@ var data = [
 	{x: 1, y: -1}
 ];
 
+data.forEach(function(point){
+
+});
+
 // stuff does not work for triangles???
 var polygons = voro.polygons(data);
 console.log(polygons)
@@ -69,6 +73,13 @@ polygons.forEach(function(polygon){
 		voroLine = new THREE.Line(voroLineGeometry, voroLineMaterial);
 		scene.add(voroLine);
 	}
+
+	//draw line from last to first point
+	voroLineGeometry = new THREE.Geometry();
+	voroLineGeometry.vertices.push(new THREE.Vector3(polygon[polygon.length -1][0], polygon[polygon.length - 1][1], 0));
+	voroLineGeometry.vertices.push(new THREE.Vector3(polygon[0][0], polygon[0][0], 0));
+	voroLine = new THREE.Line(voroLineGeometry, voroLineMaterial);
+	scene.add(voroLine);
 });
 
 function render() {
