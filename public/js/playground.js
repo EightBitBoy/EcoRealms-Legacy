@@ -43,7 +43,7 @@ voronoi test stuff
 var voro = d3.voronoi()
 	.x(function(d) { return d.x; })
 	.y(function(d) { return d.y; })
-	.extent([[-2, -2], [2, 2]]);
+	.extent([[-3, -3], [3, 3]]);
 
 var data = [
 	{x: -1, y: -1},
@@ -56,17 +56,17 @@ var data = [
 var polygons = voro.polygons(data);
 console.log(polygons)
 
-
 polygons.forEach(function(polygon){
-	var voroLineGeometry = new THREE.Geometry();
 	var voroLineMaterial = new THREE.LineBasicMaterial({color: 0xff0000, linewidth: 10});
+	var voroLineGeometry;
 
 	for(var i = 0; i < polygon.length - 1; i++){
 		console.log(polygon[i][0])
+		voroLineGeometry = new THREE.Geometry();
 		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i][0], polygon[i][1], 0));
 		voroLineGeometry.vertices.push(new THREE.Vector3(polygon[i + 1][0], polygon[i + 1][0], 0));
 	}
-	var voroLine = new THREE.Line(lineGeometry, lineMaterial);
+	var voroLine = new THREE.Line(voroLineGeometry, voroLineMaterial);
 	scene.add(voroLine);
 });
 
