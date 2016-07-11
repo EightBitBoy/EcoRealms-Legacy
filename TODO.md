@@ -18,6 +18,13 @@ A collection of things to do and stuff to take a look at.
 - http://superherojs.com/
 - http://www.raymondhill.net/voronoi/rhill-voronoi.html
 - http://blog.ivank.net/voronoi-diagram-in-javascript.html
+- https://github.com/d3/d3/blob/master/CHANGES.md#voronoi-diagrams-d3-voronoi
+- https://github.com/d3/d3-voronoi#voronoi-diagrams
+- https://code.visualstudio.com/updates#vscode
+- https://github.com/d3/d3/releases
+- http://threejs.org/docs/#Reference/Core/BufferGeometry
+- https://github.com/mrdoob/three.js/wiki/Drawing-lines
+- http://stackoverflow.com/questions/31399856/drawing-a-line-with-three-js-dynamically
 
 ## Search Terms
 - voronoi hex grid
