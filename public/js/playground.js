@@ -73,8 +73,6 @@ polygons.forEach(function(polygon){
 	var voroLineGeometry;
 	var voroLine;
 
-	console.log(polygon)
-
 	polygon.forEach(function(point){
 		var pointMaterial = new THREE.PointsMaterial({color: 0xffff00, size: 1.0});
 		var pointGeometry = new THREE.Geometry();
