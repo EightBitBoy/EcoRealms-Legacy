@@ -1,13 +1,16 @@
-console.log("Hello from playground.js!")
+console.log("Hello from playground.js!");
 
-var WIDTH = 600
-var HEIGHT = 450
+var WIDTH = 600;
+var HEIGHT = 450;
+
+var MAP_WIDTH = 100;
+var MAP_HEIGHT = 75;
 
 var VIEWPORT = document.getElementById("viewport");
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, WIDTH / HEIGHT, 0.1, 1000);
-camera.position.z = 20;
+camera.position.z = 55;
 
 var renderer = new THREE.WebGLRenderer({canvas: VIEWPORT, antialias: false});
 renderer.setSize(WIDTH, HEIGHT);
@@ -43,7 +46,7 @@ voronoi test stuff
 var voro = d3.voronoi()
 	.x(function(d) { return d.x; })
 	.y(function(d) { return d.y; })
-	.extent([[-3, -3], [3, 3]]);
+	.extent([[-(MAP_WIDTH / 2), -(MAP_HEIGHT / 2)], [(MAP_WIDTH / 2), (MAP_HEIGHT / 2)]]);
 
 var data = [
 	{x: 0.7, y: 1.3},
@@ -54,7 +57,7 @@ var data = [
 ];
 
 data.forEach(function(point){
-	var pointMaterial = new THREE.PointsMaterial({color: 0xff00ff, size: 0.5});
+	var pointMaterial = new THREE.PointsMaterial({color: 0xff00ff, size: 1.0});
 	var pointGeometry = new THREE.Geometry();
 	pointGeometry.vertices.push(new THREE.Vector3(point.x, point.y, 0));
 	scene.add(new THREE.Points(pointGeometry, pointMaterial));
@@ -71,7 +74,7 @@ polygons.forEach(function(polygon){
 	console.log(polygon)
 
 	polygon.forEach(function(point){
-		var pointMaterial = new THREE.PointsMaterial({color: 0xffff00, size: 0.5});
+		var pointMaterial = new THREE.PointsMaterial({color: 0xffff00, size: 1.0});
 		var pointGeometry = new THREE.Geometry();
 		pointGeometry.vertices.push(new THREE.Vector3(point[0], point[1], 0));
 		scene.add(new THREE.Points(pointGeometry, pointMaterial));
