@@ -67,7 +67,7 @@ data.forEach(function(point){
 var polygons = voro.polygons(data);
 
 polygons.forEach(function(polygon){
-	var voroLineMaterial = new THREE.LineBasicMaterial({color: 0xff0000, linewidth: 3});
+	var voroLineMaterial = new THREE.LineBasicMaterial({color: 0xff0000, linewidth: 2});
 	var voroLineGeometry;
 	var voroLine;
 
