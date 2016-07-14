@@ -50,10 +50,12 @@ var voro = d3.voronoi()
 
 var data = [
 	{x: 0.7, y: 1.3},
-	{x: -2, y: -2},
-	{x: -2, y: 2},
-	{x: 2, y: 2},
-	{x: 2, y: -2}
+	{x: -35, y: -18},
+	{x: -25, y: 12},
+	{x: 6, y: 8},
+	{x: 10, y: -20},
+	{x: 35, y: 25},
+	{x: 38, y: -4}
 ];
 
 data.forEach(function(point){
