@@ -7,7 +7,7 @@ var VIEWPORT = document.getElementById("viewport");
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, WIDTH / HEIGHT, 0.1, 1000);
-camera.position.z = 5;
+camera.position.z = 20;
 
 var renderer = new THREE.WebGLRenderer({canvas: VIEWPORT, antialias: false});
 renderer.setSize(WIDTH, HEIGHT);
@@ -54,7 +54,7 @@ var data = [
 ];
 
 data.forEach(function(point){
-	var pointMaterial = new THREE.PointsMaterial({color: 0xff00ff, size: 0.3});
+	var pointMaterial = new THREE.PointsMaterial({color: 0xff00ff, size: 0.5});
 	var pointGeometry = new THREE.Geometry();
 	pointGeometry.vertices.push(new THREE.Vector3(point.x, point.y, 0));
 	scene.add(new THREE.Points(pointGeometry, pointMaterial));
@@ -64,14 +64,14 @@ data.forEach(function(point){
 var polygons = voro.polygons(data);
 
 polygons.forEach(function(polygon){
-	var voroLineMaterial = new THREE.LineBasicMaterial({color: 0xff0000, linewidth: 10});
+	var voroLineMaterial = new THREE.LineBasicMaterial({color: 0xff0000, linewidth: 3});
 	var voroLineGeometry;
 	var voroLine;
 
 	console.log(polygon)
 
 	polygon.forEach(function(point){
-		var pointMaterial = new THREE.PointsMaterial({color: 0xffff00, size: 0.2});
+		var pointMaterial = new THREE.PointsMaterial({color: 0xffff00, size: 0.5});
 		var pointGeometry = new THREE.Geometry();
 		pointGeometry.vertices.push(new THREE.Vector3(point[0], point[1], 0));
 		scene.add(new THREE.Points(pointGeometry, pointMaterial));
